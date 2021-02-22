@@ -1,0 +1,103 @@
+  body {
+      background: rgb(110, 128, 62);
+      min-height: 100%;
+      font-family: 'Gloria Hallelujah', cursive;
+      color: rgb(227, 250, 206);
+  }
+  
+  h1 {
+      font-size: 3em;
+      text-align: center;
+      text-transform: uppercase;
+  }
+  
+  #container {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      height: 70vh;
+      width: 100vw;
+      text-align: center;
+  }
+  
+  #player1Card,
+  #player2Card {
+      border: 1px solid rgb(206, 206, 188);
+      border-radius: 15px;
+      padding: 20px;
+  }
+  
+  .player1,
+  .player2 {
+      flex: 40%;
+      flex-wrap: nowrap;
+      align-content: center;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+  }
+  
+  .play {
+      border-radius: 5px;
+      padding: 20px;
+      background: rgb(227, 250, 206);
+      color: rgb(110, 128, 62);
+      font-weight: bold;
+      font-size: 1.2em;
+      width: 200px;
+      display: block;
+  }
+  
+  .play:hover,
+  .choose:hover {
+      transform: scale(1.2);
+  }
+  
+  img {
+      width: 380px;
+      height: 450px;
+      padding: 10px;
+  }
+  
+  .winner {
+      background-color: rgb(215, 231, 71);
+      border-radius: 10px;
+      padding: 20px;
+  }
+  
+  .active {
+      background-color: rgb(230, 252, 216);
+      border-radius: 10px;
+      padding: 20px;
+  }
+  
+  .win {
+      position: absolute;
+      top: -20%;
+      background-color: rgb(230, 252, 216);
+      color: rgb(110, 128, 62);
+      font-size: 2em;
+      border-radius: 10px;
+      padding: 20px;
+      display: none;
+      animation: winner 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  }
+  
+  .play1 {
+      left: 230px;
+      display: none;
+  }
+  
+  .play2 {
+      right: 200px;
+      display: none;
+  }
+  
+  @keyframes winner {
+      from {
+          top: -20%
+      }
+      to {
+          top: 45%;
+      }
+  }
